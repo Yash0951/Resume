@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="home">
+                <h1>Your Name</h1>
+                <p>Computer Science Student</p>
+                <img src="path-to-your-circular-image.jpg" alt="Profile Picture" class="profile-pic">
+            </section>
+            <section id="resume">
+                <h2>Resume</h2>
+                <embed src="resume.pdf" type="application/pdf" width="100%" height="600px" />
+                <a href="resume.pdf" target="_blank" class="download-btn">Download Resume</a>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: Java, Python, C++</li>
+                    <li>Web Development: HTML, CSS, JavaScript</li>
+                    <li>Database Management: SQL, MongoDB</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Project 1: <a href="link-to-project1">Description</a></li>
+                    <li>Project 2: <a href="link-to-project2">Description</a></li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="feedback"></div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
